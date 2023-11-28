@@ -5,40 +5,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>My Portfolio // Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!-- Navigation section -->
   <header>
-    <h1>Lernantino</h1>
+    <!-- Website title -->
+    <h1>Shane Mowatt</h1>
     <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars menu-icon"></i>
+      </div>
+      <!-- Navigation links -->
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#">CV</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+  <!-- Hero banner section -->
+  <section id="profile">
+    <!-- Container for hero banner with profile picture  -->
+    <div class="hero-banner">
+      <!-- Container for profile picture -->
+      <div class="section__pic-container">
+        <img src="./profile picture.PNG" alt="Shane Mowatt Profile Pic" />
+      </div>
+      <!-- Container for the text content -->
+      <div class="section__text">
+        <!-- Greeting text -->
+        <p class="section__text__p1">Hi,</p>
+        <!-- Introducing myself -->
+        <h1 class="title">I'm Shane Mowatt</h1>
+        <p class="section__text__p2">I'm a Frontend Developer</p>
+      </div>
     </div>
   </section>
 
+ 
   <main class="page-wrapper">
-    <!-- about me -->
+    <!-- About Me section -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <!-- Container for about me content -->
+      <div class="container">
+        <!-- Title for About Me section -->
+        <h1 class="title">About Me</h1>
+        <!-- Container for detailed about me content -->
+        <div class="about-detail-container">
+          <!-- Container for experience content -->
+          <div class="experience-container">
+            <h3>Experience</h3>
+            <!-- Paragraph detailing experience so far -->
+            <p>I am currently taking part in a 16-week Frontend development bootcamp with Edx. I am working with HTML and CSS so far in the lessons. By the end of the bootcamp, I will be equipped with the understanding and expertise in Frontend engineering.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- portfolio container -->
+    <!-- Work section -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <!-- Title for Work section -->
+      <h1 class="title">Work</h1>
+      <div class="experience-details-container">
+        <!-- Container for individual work details with color styling -->
+        <div class="details-container colour-container">
+          <!-- Container for article or project -->
+          <div class="article-container">
+            <!-- Image representing the project -->
+            <img src="01-html-css-git-challenge-demo.png" alt="project 1" class="project-img" />
+          </div>
+          <!-- Subtitle for the project -->
+          <h2 class="experience-sub-title project-title">Project One - Code Refactor</h2>
+          <!-- Container for buttons or additional information -->
+          <div class="btn-container">
+            <!-- Container button linking to GitHub -->
+            <div class="btn-container-colour-2 project-btn" onclick="location.href='https://github.com/shanemowatt/Horiseon-Website-optimization.git'">
+              <!-- Button to get to Github -->
+              <button>View on GitHub</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <!-- Contact me section -->
+    <section class="page-section" id="contact">
+      <!-- Title for Contact section -->
+      <h1 class="title">Contact Me</h1>
+      <!-- Container for contact information and icons -->
+      <div class="contact-info-upper-container">
+        <!-- Container for individual contact information with icon -->
+        <div class="contact-info-container">
+          <!-- Icon for email -->
+          <img src="email-icon.png" alt="Email icon" class="icon contact-icon" style="width: 50px; height: 50px;">
+          <!-- Paragraph with email address as a link -->
+          <p><a href="mailto:shane@mowattgmail.com">shanemowatt@gmail.com</a></p>
+        </div>
+        <!-- Container for individual contact information with icon -->
+        <div class="contact-info-container">
+          <!-- Icon for GitHub -->
+          <img src="github logo.png" alt="Github icon" class="icon contact-icon" style="width: 50px; height: 50px;">
+          <p><a href="https://github.com/shanemowatt">Github</a></p>
+        </div>
+      </div>
     </section>
+
+    <!-- Footer section -->
+    <footer>
+      <p>Made with ❤ by Shane Mowatt</p>
+    </footer>
   </main>
 </body>
 

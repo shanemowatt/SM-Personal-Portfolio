@@ -7,17 +7,165 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #f8f8f8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/* Header styling */
+header {
+  background-color: #070707;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-p {
+/* Navigation styling */
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: coral;
+  border-bottom: 2px solid black;
+}
+
+/* Hero banner styling */
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Styling for profile picture container in hero banner */
+.section__pic-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Styling for text in hero banner */
+.section__text {
+  margin-left: 20px;
+}
+
+.page-section {
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.page-section h1 {
+  text-align: center;
+}
+
+/* Styling for experience container */
+.experience-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.experience-container h3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for color container */
+.colour-container {
+  border: 1px solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* Styling for project image */
+.project-img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: filter 0.3s ease;
+}
+
+/* Hover effect for project image */
+.project-img:hover {
+  filter: brightness(90%) sepia(100%) hue-rotate(20deg); 
+}
+
+/* Styling for project title and button */
+.project-title,
+.project-btn {
+  margin: 1rem;
+  color: black;
+  text-align: center;
+}
+
+/* Styling for contact section */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for upper part of contact section */
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+/* Styling for contact information container */
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: large;
+}
+
+/* Styling for footer section */
+footer p {
+  text-align: center;
 }
